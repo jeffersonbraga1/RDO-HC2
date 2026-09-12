@@ -660,7 +660,7 @@ async function handleFotos(id, e){
   const MAX_FOTOS = 3;
   const atuais = blocoPhotos[id].length;
   if (atuais + files.length > MAX_FOTOS) {
-    showAlert(`Máximo de ${MAX_FOTOS} fotos por localidade.`);
+    showAlert(`Máximo de ${MAX_FOTOS} fotos por atividade.`);
   }
   const filesToAdd = files.slice(0, Math.max(0, MAX_FOTOS - atuais));
   for (const file of filesToAdd) {
